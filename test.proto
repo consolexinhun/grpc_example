@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package test;
+
+service TestService {
+    rpc getData(Data) returns (MsgReply) {}
+}
+
+message Data {
+    int32 data=1;
+}
+
+message MsgReply {
+    string message=1;
+}
